@@ -1,19 +1,11 @@
 package Q514;
 
-import java.util.Scanner;
-
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-	    System.out.print("height =");
-	    int a= sc.nextInt();
-		sc.close();
+		double A=2.1, B=192.0 , C=10.5, D=26.7;
 		
-		System.out.print("Your height is ");
-		System.out.print(a+"cm.");
-	
-
-		
-		
+		System.out.println(A+"yd = "+B+"cm");
+		System.out.println(C+"in =  "+D+"cm");
 	}
+
 }
