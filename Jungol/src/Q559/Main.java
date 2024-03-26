@@ -1,4 +1,4 @@
-package Q518;
+package Q559;
 
 import java.util.Scanner;
 
@@ -7,9 +7,10 @@ public class Main {
 		Scanner sc = new Scanner(System.in);
 		int a = sc.nextInt();
 		int b = sc.nextInt();
-		int c = sc.nextInt();
 		sc.close();
-	 System.out.printf("sum : %d\n",a+b+c);
-	 System.out.printf("avg : %d",(a+b+c)/3);
+		double[] Class = {85.6, 79.5, 83.1, 80.0, 78.2, 75.0};
+		double sum = (Class[a-1]+Class[b-1]) ; 
+		System.out.printf("%.1f",sum);
+		
 	}
 }
