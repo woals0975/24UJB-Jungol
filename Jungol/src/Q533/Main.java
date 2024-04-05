@@ -4,20 +4,18 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
+		         //return형
 		Scanner sc = new Scanner(System.in);
-		String a =sc.nextLine();
-		char c =a.charAt(0);		
-        int b =sc.nextInt();
+		String sex =sc.next(); //   nextLine(); 시 런타임에러
+		char c =sex.charAt(0);		
+		//char c = sc.next().charAt(0);
+        int age =sc.nextInt();
         sc.close();
         
-        if(c=='M') {
-        	System.out.print("M");
-        }else {System.out.print("F");}
-        
         
         if(c=='M') {
         
-        if(b>18){
+        if(age>=18){
 	    	 System.out.print("MAN");
         }else { 
 	    	 System.out.print("BOY");
@@ -26,15 +24,21 @@ public class Main {
 	
         
         if(c=='F') {
- 
-          if(b>18) {
-	    	 System.out.print("WOMAN");
-          }
-          }if(b<=18){ 
-	    	 System.out.print("GIRL");
-          }
-	  
-	} 
+        	 if(age>=18) {
+    	    	 System.out.print("WOMAN");
+              
+              }else{ 
+    	    	 System.out.print("GIRL");
+             
+              }
+        }
+	}
 }
+              
+              
+              
+      
+    
         
-
+        
+         
