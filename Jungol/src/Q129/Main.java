@@ -4,28 +4,26 @@ import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
-		Scanner sc =new Scanner(System.in);
+		Scanner sc = new Scanner(System.in);
+		// char c = '\0' cë¥¼ nullë¡œ ì´ˆê¸°í™”
 		while(true) {
 		double a = sc.nextDouble();
 		double b = sc.nextDouble();
 		double c = (a*b)/2;
-		System.out.printf("Base = %.0f\n",a);
-		System.out.printf("height = %.0f\n",b);
-		System.out.printf("Triangle width = %.1f\n",c);
+		System.out.printf("Base = ");
+		System.out.printf("Height = ");
+		System.out.printf("Triangle width = %.1f\n", c);
 		System.out.print("Continue?");
-		String z = sc.next();
-		char x = z.charAt(0);
-		if(x=='Y'||x=='y') {	
-		}else { 
+		String d =sc.next();
+		System.out.print(" ");
+		if(d.equals("Y") || d.equals("y")) {
+			
+		}else {
 			sc.close();
-			break;
+			 break;
 		}
-		
-		//¿¹Á¦ Ãâ·Â¿¡´Â ÁÙ¹Ù²Þ ÀÖ´Âµ¥ Á¤´ä¿¡´Â ¾øÀ½
-	
 			
 		}
-		
 	}
-
+	
 }

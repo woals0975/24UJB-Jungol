@@ -8,7 +8,7 @@ public class Main {
 		int sum=0;
 		int i=0;
 		while(true) {
-			int a = sc.nextInt();		
+			int a = sc.nextInt();	
 			if(a>100 || a<0) {
 				sc.close();
 				double avg =(double)sum/(double)i;

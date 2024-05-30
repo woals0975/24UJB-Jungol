@@ -1,19 +1,18 @@
-package Q138;
+package Q5933;
 
 import java.util.Scanner;
 
 public class Main {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int Input = sc.nextInt();
-		for(int i=1;i<=Input;i++) {
-			for(int j=1;j<=Input;j++) {
-				System.out.printf("(%d, %d) ",i,j);
-				if(j==Input) {
+		int a = sc.nextInt();
+		for(int i=1; i<=a; i++) {
+			int b = 1;
+			for(int j=0; j<a; j++,b++) {
+				System.out.print(i*b +" ");
+				if(j==a-1) {
 					System.out.println();
 				}
-				
-				
 			}
 		}
 	}
