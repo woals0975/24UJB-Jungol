@@ -8,14 +8,13 @@ public class Main {
 		int a = sc.nextInt();
 		int f = 0;
 		int l = a-1;
-		int ls = 0;
 		int s = 0;// 다음 행 넘어갔을때 첫값
 		String[] al = {"A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"};
 		for(int i=0;i<a;i++) {
 			f=s;
 			s++;
 			l=a-1;
-			ls=0;
+			
 			for(int j=a-1;j>=0;j--) {
 				if(i<j) {
 					System.out.print("  ");
